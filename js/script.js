@@ -27,12 +27,13 @@ function crop_calculator(){
     // console.log(fert);
 
     //calculate the effect of the rain
-    if (fert === "yes"){
+    if (fert === "yes" || fert ==="Yes"){
         let type = prompt("Did you use premium or regular fertilizer");
-        if (type === "premium"){
+    
+        if (type === "premium" || type === "Premium"){
             finalyield = (yield * 1.15);
         }
-        else if( type === "regular"){
+        else if( type === "regular" || type === "Regular"){
             finalyield = (yield * 1.10);
         }
         else {
